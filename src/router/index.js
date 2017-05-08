@@ -31,7 +31,7 @@ export default new VueRouter({
       path: '/demos/login-cell',
       component: LoginCell,
       beforeEnter: (to, from, next) => {
-        document.title = '微信内登录'
+        document.title = '微信登录组件'
         next()
       }
     },
@@ -40,7 +40,7 @@ export default new VueRouter({
       name: 'login',
       component: Login,
       beforeEnter: (to, from, next) => {
-        document.title = '自定义登录'
+        document.title = 'APP登录组件'
         next()
       }
     },
@@ -48,7 +48,7 @@ export default new VueRouter({
       path: '/demos/cell-list',
       component: CellList,
       beforeEnter: (to, from, next) => {
-        document.title = '列表'
+        document.title = '图文列表'
         next()
       }
     },
@@ -56,7 +56,7 @@ export default new VueRouter({
       path: '/demos/checkbox-list',
       component: CheckboxList,
       beforeEnter: (to, from, next) => {
-        document.title = '列表带复选'
+        document.title = '图文列表带复选'
         next()
       }
     },
@@ -64,7 +64,7 @@ export default new VueRouter({
       path: '/demos/cell-btn',
       component: CellBtn,
       beforeEnter: (to, from, next) => {
-        document.title = '列表带按钮'
+        document.title = '纯文字带按钮列表'
         next()
       }
     },
@@ -72,7 +72,7 @@ export default new VueRouter({
       path: '/demos/form-detail',
       component: FormDetail,
       beforeEnter: (to, from, next) => {
-        document.title = '表单详情'
+        document.title = '表单详情-不带选项卡'
         next()
       }
     },
@@ -80,7 +80,7 @@ export default new VueRouter({
       path: '/demos/form-detail-cell',
       component: FormDetailCell,
       beforeEnter: (to, from, next) => {
-        document.title = '表单详情'
+        document.title = '表单详情-带选项卡'
         next()
       }
     },

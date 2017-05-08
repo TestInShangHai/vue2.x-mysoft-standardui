@@ -89,22 +89,27 @@ export default {
           ]
         },
         {
-          title: '个人中心',
-          list: [
-            {
-              title: '个人中心',
-              icon: 'icon-smile',
-              link: { path: '/demos/about-me' }
-            }
-          ]
-        },
-        {
-          title: '菜单导航',
+          title: '菜单类',
           list: [
             {
               title: '菜单导航',
               icon: 'icon-shuffling-banner',
               link: { path: '/demos/tabbar' }
+            },
+            {
+              title: '搜索',
+              icon: 'icon-search',
+              link: { path: '/demos/search' }
+            }
+          ]
+        },
+        {
+          title: '综合类',
+          list: [
+            {
+              title: '个人中心',
+              icon: 'icon-smile',
+              link: { path: '/demos/about-me' }
             }
           ]
         }
