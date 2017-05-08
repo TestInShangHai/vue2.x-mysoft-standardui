@@ -46,6 +46,7 @@ export default {
 
 body {
   background-color: #fbf9fe;
+  user-select: none;
 }
 
 html,

@@ -72,7 +72,7 @@ export default new VueRouter({
       path: '/demos/form-detail',
       component: FormDetail,
       beforeEnter: (to, from, next) => {
-        document.title = '表单详情-不带选项卡'
+        document.title = '表单详情-带选项卡'
         next()
       }
     },
@@ -80,7 +80,7 @@ export default new VueRouter({
       path: '/demos/form-detail-cell',
       component: FormDetailCell,
       beforeEnter: (to, from, next) => {
-        document.title = '表单详情-带选项卡'
+        document.title = '表单详情-不带选项卡'
         next()
       }
     },
@@ -122,7 +122,7 @@ export default new VueRouter({
       path: '/demos/search',
       component: Search,
       beforeEnter: (to, from, next) => {
-        document.title = '搜索'
+        document.title = '搜索栏'
         next()
       }
     }

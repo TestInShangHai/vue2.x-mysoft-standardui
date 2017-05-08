@@ -96,6 +96,6 @@ export default {
 
 .btn-black:active {
     color: #fff;
-    background-color: #444;
+    background-color: #555;
 }
 </style>

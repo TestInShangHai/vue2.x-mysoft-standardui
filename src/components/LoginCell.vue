@@ -79,6 +79,11 @@ export default {
   background-color: #333;
 }
 
+.btn-black:active {
+    color: #fff !important;
+    background-color: #555 !important;
+}
+
 .login-links {
   text-align: center;
   margin-top: 20px;

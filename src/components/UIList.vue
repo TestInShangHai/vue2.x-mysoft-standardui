@@ -89,7 +89,7 @@ export default {
           ]
         },
         {
-          title: '菜单类',
+          title: '索引类',
           list: [
             {
               title: '菜单导航',
@@ -97,7 +97,7 @@ export default {
               link: { path: '/demos/tabbar' }
             },
             {
-              title: '搜索',
+              title: '搜索栏',
               icon: 'icon-search',
               link: { path: '/demos/search' }
             }
