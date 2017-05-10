@@ -19,6 +19,7 @@ Vue.use(LoadingPlugin)
 Vue.use(WechatPlugin)
 Vue.use(AjaxPlugin)
 Vue.use(LocalePlugin)
+
 // const routes = [{
 //   path: '/',
 //   component: Home

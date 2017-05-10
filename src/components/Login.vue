@@ -40,7 +40,7 @@
 
 <script>
 import { Loading, Toast } from 'vux'
-import { LoginData } from '../mock'
+// const loginData = require('../../mock/login.json')
 
 export default {
   name: 'Login',
@@ -53,7 +53,7 @@ export default {
       msg: 'Hello World!',
       user: '',
       pass: '',
-      LoginData: LoginData
+      LoginData: {}
     }
   },
   methods: {
@@ -75,7 +75,20 @@ export default {
           })
         }
       }, 2000)
+    },
+    loadLogin () {
+      this.$http.get('../mock/login.json')
+        .then((res) => {
+          console.log(res)
+          this.LoginData = res.data
+        })
+        .catch((res) => {
+          console.log(res)
+        })
     }
+  },
+  created () {
+    this.loadLogin()
   }
 }
 </script>

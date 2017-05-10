@@ -60,6 +60,9 @@ app.use(devMiddleware)
 // compilation error display
 app.use(hotMiddleware)
 
+//本地mock
+app.use('/mock',express.static('./src/mock'))
+
 // serve pure static assets
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))

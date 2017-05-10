@@ -27,7 +27,8 @@
 
 <script>
 import { Group, XButton, XInput, Box, Loading, Toast } from 'vux'
-import { LoginData } from '../mock'
+// const loginData = require('../../mock/login.json')
+
 export default {
   name: 'LoginCell',
   components: {
@@ -43,7 +44,7 @@ export default {
       msg: 'Hello World!',
       user: '',
       pass: '',
-      LoginData: LoginData
+      LoginData: {}
     }
   },
   methods: {
@@ -65,7 +66,19 @@ export default {
           })
         }
       }, 2000)
+    },
+    loadLogin () {
+      this.$http.get('/mock/login.json')
+        .then((res) => {
+          this.LoginData = res.data
+        })
+        .catch((res) => {
+          console.log(res)
+        })
     }
+  },
+  created () {
+    this.loadLogin()
   }
 }
 </script>
@@ -80,8 +93,8 @@ export default {
 }
 
 .btn-black:active {
-    color: #fff !important;
-    background-color: #555 !important;
+  color: #fff !important;
+  background-color: #555 !important;
 }
 
 .login-links {
