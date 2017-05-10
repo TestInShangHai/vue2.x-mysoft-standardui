@@ -38,7 +38,7 @@ export default {
           this.groups = res.data.uilist
         })
         .catch((res) => {
-          console.log(res)
+          console.log(res + ' ')
         })
     }
   },
