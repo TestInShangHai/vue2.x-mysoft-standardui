@@ -79,7 +79,6 @@ export default {
     loadLogin () {
       this.$http.get('../mock/login.json')
         .then((res) => {
-          console.log(res)
           this.LoginData = res.data
         })
         .catch((res) => {

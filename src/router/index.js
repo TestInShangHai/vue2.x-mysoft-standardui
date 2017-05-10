@@ -20,110 +20,106 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'index',
+      name: 'list',
       component: List,
-      beforeEnter: (to, from, next) => {
-        document.title = '组件列表'
-        next()
+      meta: {
+        title: '组件列表'
       }
     },
     {
       path: '/demos/login-cell',
+      name: 'login-cell',
       component: LoginCell,
-      beforeEnter: (to, from, next) => {
-        document.title = '微信登录组件'
-        next()
+      meta: {
+        title: '微信登录组件'
       }
     },
     {
       path: '/demos/login-app',
-      name: 'login',
+      name: 'login-app',
       component: Login,
-      beforeEnter: (to, from, next) => {
-        document.title = 'APP登录组件'
-        next()
+      meta: {
+        title: 'APP登录组件'
       }
     },
     {
       path: '/demos/cell-list',
+      name: 'cell-list',
       component: CellList,
-      beforeEnter: (to, from, next) => {
-        document.title = '图文列表'
-        next()
+      meta: {
+        title: '图文列表'
       }
     },
     {
       path: '/demos/checkbox-list',
+      name: 'checkbox-list',
       component: CheckboxList,
-      beforeEnter: (to, from, next) => {
-        document.title = '图文列表带复选'
-        next()
+      meta: {
+        title: '图文列表带复选'
       }
     },
     {
       path: '/demos/cell-btn',
+      name: 'cell-btn',
       component: CellBtn,
-      beforeEnter: (to, from, next) => {
-        document.title = '纯文字带按钮列表'
-        next()
+      meta: {
+        title: '纯文字带按钮列表'
       }
     },
     {
       path: '/demos/form-detail',
+      name: 'form-detail',
       component: FormDetail,
-      beforeEnter: (to, from, next) => {
-        document.title = '表单详情-带选项卡'
-        next()
+      meta: {
+        title: '表单详情-带选项卡'
       }
     },
     {
       path: '/demos/form-detail-cell',
+      name: 'form-detail-cell',
       component: FormDetailCell,
-      beforeEnter: (to, from, next) => {
-        document.title = '表单详情-不带选项卡'
-        next()
+      meta: {
+        title: '表单详情-不带选项卡'
       }
     },
     {
       path: '/demos/form-group',
+      name: 'form-group',
       component: FormGroup,
-      beforeEnter: (to, from, next) => {
-        document.title = '分组表单输入'
-        next()
+      meta: {
+        title: '分组表单输入'
       }
     },
     {
       path: '/demos/form-single',
+      name: 'form-single',
       component: FormSingle,
-      beforeEnter: (to, from, next) => {
-        document.title = '未分组表单输入'
-        next()
+      meta: {
+        title: '未分组表单输入'
       }
     },
     {
       path: '/demos/about-me',
       name: 'about-me',
       component: AboutMe,
-      beforeEnter: (to, from, next) => {
-        document.title = '个人中心'
-        next()
+      meta: {
+        title: '个人中心'
       }
     },
     {
       path: '/demos/tabbar',
       name: 'tabbar',
       component: Tabbar,
-      beforeEnter: (to, from, next) => {
-        document.title = '菜单导航'
-        next()
+      meta: {
+        title: '菜单导航'
       }
     },
     {
       path: '/demos/search',
+      name: 'search',
       component: Search,
-      beforeEnter: (to, from, next) => {
-        document.title = '搜索栏'
-        next()
+      meta: {
+        title: '搜索栏'
       }
     }
   ]

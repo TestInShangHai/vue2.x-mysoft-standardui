@@ -34,11 +34,10 @@ export default {
     loadList () {
       this.$http.get('./mock/uilist.json')
         .then((res) => {
-          console.log(res)
           this.groups = res.data.uilist
         })
         .catch((res) => {
-          console.log(res + ' ')
+          console.log(res)
         })
     }
   },

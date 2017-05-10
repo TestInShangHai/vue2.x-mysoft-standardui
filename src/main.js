@@ -4,7 +4,6 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-// import Home from './components/HelloFromVux'
 import router from './router'
 
 Vue.use(VueRouter)
@@ -20,14 +19,9 @@ Vue.use(WechatPlugin)
 Vue.use(AjaxPlugin)
 Vue.use(LocalePlugin)
 
-// const routes = [{
-//   path: '/',
-//   component: Home
-// }]
-
-// const router = new VueRouter({
-//   routes
-// })
+router.afterEach(route => {
+  document.title = route.meta.title
+})
 
 FastClick.attach(document.body)
 
