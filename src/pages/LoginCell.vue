@@ -27,7 +27,6 @@
 
 <script>
 import { Group, XButton, XInput, Box, Loading, Toast } from 'vux'
-// const loginData = require('../../mock/login.json')
 
 export default {
   name: 'LoginCell',
@@ -68,7 +67,7 @@ export default {
       }, 2000)
     },
     loadLogin () {
-      this.$http.get('/mock/login.json')
+      this.$http.get('/login')
         .then((res) => {
           this.LoginData = res.data
         })

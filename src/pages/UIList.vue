@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     loadList () {
-      this.$http.get('./mock/uilist.json')
+      this.$http.get('/uilist')
         .then((res) => {
           this.groups = res.data.uilist
         })

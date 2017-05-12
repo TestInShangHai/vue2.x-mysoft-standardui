@@ -1,30 +1,54 @@
 # vue2.x-mysoft-standardui
 
-> 项目标准UI
+> 武汉明源专业线-移动项目标准UI
 
-## Build Setup
+## 演示地址
 
-``` bash
-# install dependencies
-npm install
+移动端扫码关注公众号，通过菜单访问典型UI页面。
 
-# serve with hot reload at localhost:8080
-npm run dev
+PC端直接访问 http://zyx.mingyuanyun.com
 
-# build for production with minification
-npm run build
+## 版本说明
+### V1.3 添加本地mock数据访问
 
-# build for production and view the bundle analyzer report
-npm run build --report
+> 加入axios-mock-adapter插件，结合axios插件，可在本地模拟访问接口。
 
-# run unit tests
-npm run unit
+### V1.2 优化修改title方式
 
-# run e2e tests
-npm run e2e
+> 为route添加meta信息，通过读取meta信息来获取各自页面的title。
 
-# run all tests
-npm test
+```js
+    {
+      path: '/',
+      name: 'list',
+      component: List,
+      meta: {
+        title: '组件列表'
+      }
+    }
+```
+```js
+router.afterEach(route => {
+  document.title = route.meta.title
+})
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### V1.1 添加基础组件UI
+
+> 包括登录、列表、表单以及导航类UI
+
+### V1.0 官方脚手架配置
+
+## 构建和安装命令
+
+``` bash
+# 安装依赖包
+npm install
+
+# 在localhost:8080 运行开发环境
+npm run dev
+
+# 在生产环境打包
+npm run build
+```
+
