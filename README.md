@@ -12,9 +12,9 @@ PC端直接访问 http://zyx.mingyuanyun.com
 
 ### 演示效果
 
-<img src="./readme/demo1.gif" />
-<img src="./readme/demo2.gif" />
-<img src="./readme/demo3.gif" />
+<img src="./readme/demo1.gif" style="display:inline-block;" />
+<img src="./readme/demo2.gif" style="display:inline-block;" />
+<img src="./readme/demo3.gif" style="display:inline-block;" />
 
 ## 版本说明
 ### V1.3 添加本地mock数据访问
