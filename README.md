@@ -4,9 +4,17 @@
 
 ## 演示地址
 
+<img src="./readme/WechatQR.jpeg" width="300" height="300"/>
+
 移动端扫码关注公众号，通过菜单访问典型UI页面。
 
 PC端直接访问 http://zyx.mingyuanyun.com
+
+### 演示效果
+
+<img src="./readme/demo1.gif" />
+<img src="./readme/demo2.gif" />
+<img src="./readme/demo3.gif" />
 
 ## 版本说明
 ### V1.3 添加本地mock数据访问
